@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+.no-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.trapezoid {
+  clip-path: polygon(0% 0%, 100% 12%, 100% 92%, 0% 100%);
+}
+
+.pulse {
+  animation: search 2s infinite;
+}
+
+@keyframes search {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
